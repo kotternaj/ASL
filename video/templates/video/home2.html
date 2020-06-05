@@ -1,0 +1,36 @@
+{% extends "video/base.html" %}
+
+{% block content %}
+
+<div>
+  <form action="" method="post">
+  {% csrf_token %}
+  {{ form }}
+   <div class="submitbutton">
+     <input class='btn btn-outline-primary' type="Submit" name="submit" value="Submit">
+   </div>
+  </form>
+</div>
+
+<div class="video-media-youtube">
+				<ul class="video__container">
+
+					<li class="video__content">
+
+						<ul class="video-media-youtube-inner">
+              {% for key, value in vid_url %}
+        					<li class="media__embed">
+          						<h3>{{ key }}</h3>
+          						<div class="video-media-youtube-inner-vi video-media-youtube-inner-vi--ratio">
+            						<iframe src="{{ value }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          						</div>
+        					</li>
+                  {% endfor %}
+      			</ul>
+
+    			</li>
+
+  			</ul>
+</div>
+
+{% endblock content %}
