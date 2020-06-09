@@ -8,6 +8,6 @@ class TextForm(forms.Form):
          'class': "input",
          'class': "form-control",
          'placeholder': "Enter Text Here...",
-         'style': 'width:500px',         
+         'style': 'width:500px',
          })
     )

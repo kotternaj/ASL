@@ -2,13 +2,22 @@
 
 {% block content %}
 
-<div>
-  <form action="" method="post">
-  {% csrf_token %}
-  {{ form }}
-   <div class="submitbutton">
+<div align="center">
+  <form action="" method="post" class="searchField">
+    {% csrf_token %}
+    {{ form }}
+    <table border="0">
+        <tr>
+            <td align="center" style="width: 460px;">
+            </td>
+            <td>
+              <button class="btn btn-primary" style="margin:0px !important;" type="submit"><i class="icon-search"></i> Search</button>
+            </td>
+        </tr>
+    </table>
+   <!-- <div class="submitbutton">
      <input class='btn btn-outline-primary' type="Submit" name="submit" value="Submit">
-   </div>
+   </div> -->
   </form>
 </div>
 
@@ -22,7 +31,7 @@
         					<li class="media__embed">
           						<h3>{{ key }}</h3>
           						<div class="video-media-youtube-inner-vi video-media-youtube-inner-vi--ratio">
-            						<iframe src="{{ value }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            						<iframe src="{{ value }}" width="200" height="100" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           						</div>
         					</li>
                   {% endfor %}
