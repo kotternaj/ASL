@@ -13,6 +13,7 @@ def home(request):
     if form.is_valid():
         text_value = form.cleaned_data.get("text_value")
         vid_url = getVidURL(text_value)
+        form = TextForm()
 
     context = {'form': form, 'text_value': text_value,
                'submitbutton': submitbutton, 'vid_url': vid_url}

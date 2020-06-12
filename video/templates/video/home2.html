@@ -2,22 +2,24 @@
 
 {% block content %}
 
-<div align="center">
+<div class="header">
+  <h2>American Sign Language Learning Assistant Project</h2>
+</div>
+
+<div class="searchBlock" align="center">
   <form action="" method="post" class="surroundField">
     {% csrf_token %}
     {{ form }}
     <table border="0">
-        <tr>
-            <td >
-            </td>
-            <td>
-              <button class="btn btn-primary" style="margin:0px !important;" type="submit"><i class="icon-search"></i> Search</button>
-            </td>
-        </tr>
+      <tr>
+        <td>
+        </td>
+
+        <td>
+          <button class="btn btn-primary" style="margin:0px !important;" type="submit"><i class="icon-search"></i> Submit</button>
+        </td>
+      </tr>
     </table>
-   <!-- <div class="submitbutton">
-     <input class='btn btn-outline-primary' type="Submit" name="submit" value="Submit">
-   </div> -->
   </form>
 </div>
 
