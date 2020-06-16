@@ -72,6 +72,7 @@ h3 {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+  margin-left: 5px;
 }
 
 .media__embed {
@@ -96,8 +97,8 @@ h3 {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 80%;
-  height: 80%;
+  width: 97%;
+  height: 97%;
 }
 
 .btn.btn-primary {
@@ -129,7 +130,7 @@ h3 {
   }
 
   .media__embed {
-    flex-basis: calc(50% - .9375rem);
+    flex-basis: calc(33% - .9375rem);
     padding-bottom: 1.875rem;
   }
 }

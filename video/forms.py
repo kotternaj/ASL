@@ -8,7 +8,7 @@ class TextForm(forms.Form):
          'class': "input",
          'class': 'form-control',
          'style': 'width: 460px',
-         'placeholder': "Enter Text Here...",
+         'placeholder': "enter words here to find ASL videos...",
          'style': 'align:center',
          'autocomplete': 'off',
          'style': 'margin-bottom:10px',
