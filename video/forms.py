@@ -7,10 +7,10 @@ class TextForm(forms.Form):
         widget=forms.TextInput(attrs={
          'class': "input",
          'class': 'form-control',
-         'style': 'width: 460px',
+         'style': 'width: 600px',
          'placeholder': "enter words here to find ASL videos...",
          'style': 'align:center',
          'autocomplete': 'off',
-         'style': 'margin-bottom:10px',
+         'style': 'margin-top:15px',
          })
     )

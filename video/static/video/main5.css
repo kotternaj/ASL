@@ -110,8 +110,7 @@ h3 {
 .surroundField {
   /* display: flex-row; */
     margin-top: 5px;
-    width: 620px;
-    padding: 10px;
+    width: 620px;    
     background: #d3dde7;
     border: 1px solid #9faabc;
     border-radius: 2px;
