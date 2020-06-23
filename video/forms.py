@@ -10,6 +10,7 @@ class TextForm(forms.Form):
          'placeholder': "Search for ASL Videos",
          'style': 'align:center',
          'autocomplete': 'off',
-         'style': 'margin-top:15px',
+         'style': 'margin-top: 15px',
+         # 'style': 'background-color:#121212',
          })
     )

@@ -102,22 +102,21 @@ h3 {
 }
 
 .btn.btn-primary {
-  width: 70px;
-  background-color: #363331 !important;
+  /* cursor: pointer; */
+  width: 65px;
+  background-color: #363636 !important;
   margin:0px !important;
-  border-radius: 2px;
-  outline-color: #363331 !important;
+  border-radius: 0 2px 2px 0;
+  border: 1px solid #363636 !important;
 }
 
 .text_field{
   width: 600px;
 }
+
 .surroundField {
-    /* flex-direction: row; */
-    /* margin-top: 5px; */
-    /* width: 100%; */
-    background: #d3dde7;
-    border: 1px solid #9faabc;
+    background: #252525;
+    border: 1px solid #252525;
     border-radius: 2px;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
