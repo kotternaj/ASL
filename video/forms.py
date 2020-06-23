@@ -5,10 +5,9 @@ class TextForm(forms.Form):
         label='',
         max_length=50,
         widget=forms.TextInput(attrs={
-         'class': "input",
+         'class': 'input',
          'class': 'form-control',
-         'style': 'width: 600px',
-         'placeholder': "enter words here to find ASL videos...",
+         'placeholder': "Search for ASL Videos",
          'style': 'align:center',
          'autocomplete': 'off',
          'style': 'margin-top:15px',

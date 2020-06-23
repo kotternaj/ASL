@@ -102,23 +102,26 @@ h3 {
 }
 
 .btn.btn-primary {
-  width: 50px;
+  width: 70px;
   background-color: #363331 !important;
   margin:0px !important;
+  border-radius: 2px;
+  outline-color: #363331 !important;
 }
 
+.text_field{
+  width: 600px;
+}
 .surroundField {
-  /* display: flex-row; */
-    margin-top: 5px;
-    width: 620px;    
+    /* flex-direction: row; */
+    /* margin-top: 5px; */
+    /* width: 100%; */
     background: #d3dde7;
     border: 1px solid #9faabc;
     border-radius: 2px;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
 }
-
-
 
 @media only screen and (min-width: 1024px) {
 
