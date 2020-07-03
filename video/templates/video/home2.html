@@ -1,20 +1,14 @@
 {% extends "video/base.html" %}
-
 {% block content %}
-
-<!-- <div class="header">
-  <h2>American Sign Language Video Learning Project</h2>
-</div> -->
 
 <div class="searchBlock" align="center">
   <form action="" method="post" class="surroundField">
+<div class="img-left"><img src="/static/aslsymbol.png" height="50" width="50"></div>
     {% csrf_token %}
-
     <table border="0">
       <tr>
         <td class="text_field">{{ form.as_p }}
         </td>
-
         <td>
           <button class="btn btn-primary" style="margin:0px !important;" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
         </td>
@@ -25,9 +19,7 @@
 
 <div class="video-media-youtube">
 				<ul class="video__container">
-
 					<li class="video__content">
-
 						<ul class="video-media-youtube-inner">
               {% for key, value in vid_url %}
         					<li class="media__embed">
@@ -38,9 +30,7 @@
         					</li>
                   {% endfor %}
       			</ul>
-
     			</li>
-
   			</ul>
 </div>
 

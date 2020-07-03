@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup as BS
 import urllib.request
-from urllib.parse import urlparse
+import time
 
 def getVidURL(text_input):
 
@@ -17,10 +17,12 @@ def getVidURL(text_input):
 
     #find the iframe URL for each item in the url_list and add to new list
     for url in url_list:
+        start_time = time.time()
         with urllib.request.urlopen(url) as response:
             res = BS(response.read(), features="html.parser")
             vid_url.append(res.findAll("iframe")[1].attrs["src"])
             print(vid_url)
+            print("--- %s seconds ---" % (time.time() - start_time))
     #combine both lists into a dict with word inputted as key and iframe URL as value
     vid_dict = {words[i]: vid_url[i] for i in range(len(words))}.items()
     print(vid_dict)

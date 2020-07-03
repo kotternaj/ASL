@@ -64,6 +64,7 @@ h3::before {
 h3 {
   display: inline-block;
   padding: 20px 0;
+  color: black;
 }
 
 .video-media-youtube-inner {
@@ -99,27 +100,33 @@ h3 {
   bottom: 0;
   width: 97%;
   height: 97%;
+  border: solid white;
 }
 
 .btn.btn-primary {
   /* cursor: pointer; */
   width: 65px;
-  background-color: #363636 !important;
+  background-color: #474747 !important;
   margin:0px !important;
   border-radius: 0 2px 2px 0;
-  border: 1px solid #363636 !important;
+  border: 1px solid #474747 !important;
 }
 
 .text_field{
   width: 600px;
 }
 
-.surroundField {
+.surroundField {    
+    display: flex;
     background: #252525;
     border: 1px solid #252525;
     border-radius: 2px;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
+    justify-content: center;
+}
+.img-left {
+    margin-top: 10px;
 }
 
 @media only screen and (min-width: 1024px) {

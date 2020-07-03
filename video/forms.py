@@ -11,6 +11,7 @@ class TextForm(forms.Form):
          'style': 'align:center',
          'autocomplete': 'off',
          'style': 'margin-top: 15px',
+         # 'style': 'font-family: "'Roboto','Noto',sans-serif",
          # 'style': 'background-color:#121212',
          })
     )
